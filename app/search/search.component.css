@@ -1,0 +1,80 @@
+.div2{
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    display: inline;
+}
+ul li{
+    display: inline;
+    background-color:lightskyblue;
+    color: white;
+    border-radius: 10px;
+}
+li{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: large;
+    margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+}
+.form{
+    padding-top: 100px;
+}
+.label{
+    margin-top: 50px;
+    text-align: left; 
+    padding-left: 50px;
+    font-size: x-large;    
+}    
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+}
+.container1{
+    border:white;
+    border-style: solid;
+    border-radius: 20px;
+    width: 15%;  
+    padding: 20px; 
+    height:50%; 
+    float: left; 
+    margin-left: 2%; 
+    margin-top: 90px;
+}
+.container2{
+    border:white;
+    border-style: solid;
+    border-radius: 20px;
+    width: 70%;  
+    padding: 20px; 
+    height:50%; 
+    float: right; 
+    margin-right: 2%;
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.submit{
+    font-size:large; 
+    margin-top: 100px; 
+    margin-left:300px;
+    border-radius: 20px;
+     padding: 10px;
+}
+.option{
+    border-radius: 20px;
+}
+.h2{
+    text-align: center;
+    margin-right:300px ;
+    margin-top: 5%;
+}
+.option1{
+    border-radius: 20px;
+    font-size: large;
+}

@@ -1,0 +1,24 @@
+
+<div class="container">
+  <h3 style="text-align: center;">Login</h3>
+  <br/>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+
+      <label for="username">User Name:</label>
+      <input type="text" formControlName="username" class="form-control" id="username">
+      <div *ngIf="submitted && loginForm.controls.username.errors"> 
+        <div  *ngIf="loginForm.controls.username.errors.required">username is required</div> 
+       </div> 
+       <br><br>
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" formControlName="password" id="pwd">
+       <div *ngIf="submitted && loginForm.controls.password.errors">
+        <div  *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+        </div>
+        <br><br>
+      
+      <button class="btn btn-primary"> Submit</button>
+      <br/><br/>   
+  </form>
+</div>
+

@@ -1,0 +1,32 @@
+<div class="div1">
+    <button class="btn btn-primary"(click)="registerUser()" style="margin;">Ticket Cancellation</button>
+    <button class="btn btn-primary" (click)="loginUser()">Login</button>   
+    <!-- <button class="button" onclick="loginuser()">Login</button> -->
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-primary"(click)="registerUser()">Sign Up</button>
+ 
+    <!-- <button class="button">Sign-up</button > -->
+  </div>
+  <div class="form">
+      <form  >
+        <div style="width: 100%;">
+          <label class="label">Source:</label>
+          <select class="select">
+           <option *ngFor = "let arr of source">{{arr}}</option>
+          </select>
+          <label class="label">Destination:</label>
+          <select class="select">
+          <option *ngFor= "let i of destination">{{i}}</option>
+          </select>
+          <label class="label">Journey Date:</label><input type="date" class="select">
+          </div>
+          <div style="width: 100% ; text-align: center;padding-top: 4%;"><button class="btn btn-primary" value="Search Bus">Submit</button></div>
+      </form>
+  
+    <!-- <input type="submit" va
+          </div>lue="Search Bus" 
+      <div>>  styl</div
+        </div>e="font-size:large; margin-top: 100px; margin-left:400px;
+        <div>>     border-radius: 20px; padding: 10px;"> -->
+  </div>
+  

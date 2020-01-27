@@ -1,0 +1,35 @@
+authorised
+<div>
+<div class="container1" >
+  <ul>
+    <li><a href="www.google.com" >My Bookings</a></li>
+    <br><br><br>
+    <li ><a href=""> My Cancellation</a></li>
+    <br><br><br>
+    <li><a href="">My Wallet</a></li>
+    <br><br><br>
+    <li><a>Coach Booking</a></li>
+  </ul>
+</div>
+<h2 class="h2">Where would you like to go?</h2>
+<div class="container2">
+  <div class="form">
+    <form action="" method="GET">
+      
+      <label class="label">Source:</label>
+      <select class="option1">
+        <option *ngFor = "let arr of source" class="option">{{arr}}</option>
+      </select>
+      <label class="label">Destination:</label>
+      <select class="option1">
+        <option *ngFor= "let i of destination" >{{i}}</option>
+      </select>
+      <label class="label">Journey Date:</label><input type="date" class="option">
+      
+    </form>
+    <input type="submit" value="Search Bus" class="submit">
+        </div>
+</div>
+</div>
+
+

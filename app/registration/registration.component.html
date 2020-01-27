@@ -1,0 +1,64 @@
+
+<form [formGroup]="registrationForm" (ngSubmit)="onRegister()" ngNativeValidate>
+    <div class="container">
+        <h1 style="margin-left: 50px;">Registration</h1><br>
+        <table>
+            <tr> 
+                <td><label for="passengerName"><b> Name:</b></label></td>
+                <td><input type="text" placeholder="Enter your name" formControlName="passengerName"></td>
+                <div *ngIf="submitted && registrationForm.controls.passengerName.errors"> 
+                    <div  *ngIf="registrationForm.controls.passengerName.errors.required">username is required</div> 
+                   </div> 
+            </tr>
+            <tr>
+                <td><label for="passengerEmail"><b>Email id:</b></label></td>
+                <td><input type="text" placeholder="Enter your email id" formControlName="passengerEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                <div *ngIf="submitted && registrationForm.controls.passengerEmail.errors"> 
+                    <div  *ngIf="registrationForm.controls.passengerEmail.errors.required">emailid is required</div> 
+                   </div> 
+            </tr>
+            <tr>
+                <td>
+                    <label for="passengerGender"><b>Gender:</b></label>
+                </td>
+                <td>
+                    <select formControlName="passengerGender" name="passengerGender" style="width: 100%;">
+                        <option value ="D" name="passengerGender">--SELECT--</option>
+                        <option value = "M" name="passengerGender"> MALE</option>
+                        <option value ="F" name="passengerGender">FEMALE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="passengerAge"><b>Age:</b></label>
+                </td>
+                <td><input type="text" placeholder="Age" name="passengerAge" formControlName="passengerAge" pattern="[1-9]{1,3}"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="passengerPhoneNumber"><b>Contact Number:</b></label>
+                </td>
+                <td><input type="text" placeholder="contact number" name="passengerPhoneNumber" 
+                    formControlName="passengerPhoneNumber"  pattern="[7-9]{1}[0-9]{9}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password"><b>Password:</b></label>
+                </td>
+                <td><input type="password" placeholder="Enter the Password" [(ngModel)]="password" formControlName="password"></td>
+                <div *ngIf="submitted && registrationForm.controls.password.errors"> 
+                    <div  *ngIf="registrationForm.controls.password.errors.required">password is required</div> 
+                   </div> 
+            </tr>
+            <tr>
+                <!-- <td>
+                    <label for="Confirm password"><b>Confirm password:</b></label>
+                </td> -->
+                <!-- <td><input type="password" placeholder="Confirm password" [(ngModel)]="confirmPassword" formControlName="confirmPassword" pattern="[A-Za-z1-9]{5}"></td> -->
+            </tr>
+        </table>
+       <button class="btn btn-primary">submit</button>
+    </div>
+</form>

@@ -1,0 +1,50 @@
+.div1{
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    display: inline;
+    float: right;
+    
+}
+ul li{
+    display: inline;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+}
+li{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: large;
+    margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+}
+.form{
+    padding-top: 100px;
+    margin-bottom: 500px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.label{
+    margin-top: 50px;
+    text-align: left; 
+    padding-left: 50px;
+    font-size: x-large; 
+    font-family:'Trebuchet MS';   
+}    
+.select{
+    font-size: large;
+    border-radius: 10px;
+}
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: -5%;
+    font-size: large;
+    color: navy;
+}
+.submit{
+    font-size:large;
+}
